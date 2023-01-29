@@ -1,3 +1,74 @@
-*{
-    margin: 0px;
+* {
+  margin: 0px;
+  font-family: "Work Sans", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+/* .........................
+header section starts here
+.......................... */
+header {
+  background-color: #fff4e7;
+}
+.navigation-section > a {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.navigation-section > a:visited {
+  color: #131313;
+}
+.navigation-section a {
+  text-decoration: none;
+}
+.navigation-menu li {
+  list-style: none;
+}
+.navigation-section i {
+  display: none;
+}
+.navigation-menu a {
+  color: #424242;
+  font-weight: 500;
+  font-size: 18px;
+}
+.navigation-menu a:visited {
+  color: #424242;
+}
+.navigation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 240px 0px 228px;
+}
+.navigation-menu {
+  display: flex;
+  gap: 60px;
+}
+/* .................
+header section ends here
+.................... */
+
+/* ................
+Media Queries
+...................... */
+@media screen and (max-width: 576px) {
+  .navigation-section {
+    padding: 20px 20px 0px;
+  }
+  .navigation-section a {
+    font-size: 20px;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+  .navigation-section > i {
+    display: inline;
+    cursor: pointer;
+  }
+  .navigation-section > i:focus{
+    transform: rotate(90deg);
+  }
 }
