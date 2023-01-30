@@ -6,7 +6,7 @@ button {
   cursor: pointer;
 }
 /* .........................
-header section starts here
+navigation in header section starts here
 .......................... */
 header {
   background-color: #fff4e7;
@@ -47,8 +47,105 @@ header {
   gap: 60px;
 }
 /* .................
-header section ends here
+navigation in header section ends here
 .................... */
+
+/* ................
+description in header section starts here 
+................... */
+.header-description {
+  max-width: 862px;
+  height: 225px;
+  margin: 100px auto 33px;
+}
+.header-description > h1 {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header-description > p {
+  text-align: center;
+  color: #888787;
+}
+.primary-button {
+  border: none;
+  border-radius: 5px;
+  background-color: #ff900e;
+  height: 64px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 25px;
+  display: block;
+}
+header > button {
+  margin: 0px auto;
+}
+
+/*.......................
+description in header section ends here 
+ */
+
+/* .................
+ header banner image
+ ..................... */
+.header-banner-image {
+  max-width: 1440px;
+  max-height: 700px;
+  margin: 50px auto;
+  padding-bottom: 50px;
+}
+/* ....................
+ header banner image ends here
+ ...................... */
+
+/*...............................
+  feature section starts from here
+ ................................ */
+.feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 73px;
+  margin: 0px auto;
+}
+.feature-images {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows:repeat(2,auto) ;
+  row-gap: 24px;
+  column-gap:24px;
+  max-width: 708px;
+  max-height: 708px;
+}
+.feature-images img {
+  max-width: 342px;
+  max-height: 342px;
+  border-radius: 8px;
+}
+
+.feature-description {
+  max-width: 537px;
+}
+.feature-description h1 {
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 24px;
+}
+.feature-description h1 .quick-list {
+  color: #727272;
+}
+.feature-description h1 .features {
+  color: #ff900e;
+}
+.feature-description p {
+  color: #727272;
+  margin-bottom: 32px;
+}
+/*...............................
+  feature section starts ends here
+  ....................... */
 
 /* ................
 Media Queries
@@ -68,7 +165,37 @@ Media Queries
     display: inline;
     cursor: pointer;
   }
-  .navigation-section > i:focus{
+  .navigation-section > i:focus {
     transform: rotate(90deg);
   }
+  .header-description {
+    margin: 30px auto 10px;
+    padding: 0px 10px;
+  }
+  .header-description > h1 {
+    font-size: 30px;
+  }
+  .header-banner-image img {
+    width: 100%;
+  }
+  .header-banner-image {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .feature-container{
+    flex-direction: column-reverse;
+    margin:0px 10px;
+    padding-right: 10px;
+    
+  }
+  .feature-images{
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,auto);
+    row-gap: 10px;
+    column-gap: 10px;
+    max-width: 100%;
+  }
+  .feature-images img {
+    max-width: 100%;
+}
 }
