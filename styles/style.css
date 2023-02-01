@@ -369,6 +369,7 @@ Media Queries
     flex-wrap: wrap;
     margin: 20px;
     row-gap: 20px;
+    column-gap: 10px;
   }
   .sponsors-logo img{
     width: 100px;
