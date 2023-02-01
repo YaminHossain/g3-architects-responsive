@@ -168,7 +168,7 @@ description in header section ends here
   padding-left: 21px;
   padding-right: 90px;
 }
-.feature-head{
+.feature-head {
   max-width: 586px;
   padding: 30px 42px;
   margin-bottom: 20px;
@@ -198,11 +198,11 @@ description in header section ends here
   font-weight: 800;
   font-size: 65px;
 }
-.feature-list-image-button{
+.feature-list-image-button {
   position: relative;
   padding-left: calc(146px - 55px);
 }
-.feature-list-button{
+.feature-list-button {
   position: absolute;
   top: 900px;
   left: -1px;
@@ -210,6 +210,85 @@ description in header section ends here
 /* ..................
   feature list section ends here
   .................... */
+
+/*.......................
+  Some Facts section starts here
+  ...................... */
+.some-facts > h2 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 240px 240px 24px;
+}
+.some-facts > p {
+  color: #727272;
+  margin-left: 240px;
+  max-width: 542px;
+}
+.some-facts-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 290px;
+}
+.some-facts-button {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  background-color: white;
+  padding: 45px;
+}
+.some-facts-button:focus,
+.some-facts-button:hover {
+  background-color: #ff900e;
+  transform: scale(1.1);
+}
+.some-facts-button span {
+  display: block;
+  font-weight: 600;
+  color: #727272;
+}
+
+.some-facts-button > .btn-bold {
+  font-weight: 600;
+  font-size: 45px;
+  color: #131313;
+}
+/* ....................
+  some facts section ends here
+  ........................ */
+/* .......................
+  Sponsors section starts from here
+  ............................. */
+.sponsors > h1 {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.sponsors > p {
+  color: #727272;
+  text-align: center;
+  margin: 0px auto 50px;
+  max-width: 542px;
+}
+.sponsors-logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 240px 130px;
+}
+/* .........................
+  Sponsor section ends here
+  ........................... */
+  /*..............
+  footer section starts here
+  .................. */
+  footer{
+    background: #FFF4E7;
+    padding: 38px 410px;
+    border-radius: 5px;
+    margin: 0px 240px 216px;
+  }
+  /* ......................
+  footer section ends here
+  .......................... */
 
 /* ................
 Media Queries
@@ -264,7 +343,7 @@ Media Queries
   .feature-list-container {
     flex-direction: column;
   }
-  .feature-list-image-button{
+  .feature-list-image-button {
     display: none;
   }
 }
