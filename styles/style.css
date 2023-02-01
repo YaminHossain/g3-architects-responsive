@@ -112,10 +112,10 @@ description in header section ends here
 }
 .feature-images {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows:repeat(2,auto) ;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   row-gap: 24px;
-  column-gap:24px;
+  column-gap: 24px;
   max-width: 708px;
   max-height: 708px;
 }
@@ -144,8 +144,72 @@ description in header section ends here
   margin-bottom: 32px;
 }
 /*...............................
-  feature section starts ends here
+  feature section ends here
   ....................... */
+
+/* ..................
+  feature list section starts from here
+  .................... */
+.feature-list-container {
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+  margin: 130px 0px;
+}
+.feature-list-inner-container {
+  max-width: 586px;
+  max-height: 982px;
+}
+.feature-list-heading {
+  font-weight: 800;
+  font-size: 45px;
+  border-left: 5px solid #ff900e;
+  margin-bottom: 24px;
+  padding-left: 21px;
+  padding-right: 90px;
+}
+.feature-head{
+  max-width: 586px;
+  padding: 30px 42px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+.feature-head h4 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.feature-head p,
+.feature-list-inner-container p {
+  color: #727272;
+  padding-bottom: 30px;
+}
+.feature-list-button {
+  max-width: 342px;
+  border: none;
+  padding: 45px 42px;
+  border-radius: 8px;
+  background-color: #ff900e;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+.feature-list-button span {
+  font-weight: 800;
+  font-size: 65px;
+}
+.feature-list-image-button{
+  position: relative;
+  padding-left: calc(146px - 55px);
+}
+.feature-list-button{
+  position: absolute;
+  top: 900px;
+  left: -1px;
+}
+/* ..................
+  feature list section ends here
+  .................... */
 
 /* ................
 Media Queries
@@ -182,20 +246,25 @@ Media Queries
     margin-top: 20px;
     padding: 10px;
   }
-  .feature-container{
+  .feature-container {
     flex-direction: column-reverse;
-    margin:0px 10px;
+    margin: 0px 10px;
     padding-right: 10px;
-    
   }
-  .feature-images{
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: repeat(2,auto);
+  .feature-images {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
     row-gap: 10px;
     column-gap: 10px;
     max-width: 100%;
   }
   .feature-images img {
     max-width: 100%;
-}
+  }
+  .feature-list-container {
+    flex-direction: column;
+  }
+  .feature-list-image-button{
+    display: none;
+  }
 }
